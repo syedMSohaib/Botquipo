@@ -1,0 +1,1212 @@
+2020-07-19 22:59:09,277 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 22:59:11,438 [INFO ]  Rasa server is up and running.
+2020-07-19 22:59:30,024 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/model'
+Traceback (most recent call last):
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /model
+2020-07-19 22:59:41,085 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models'
+Traceback (most recent call last):
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models not found
+2020-07-19 23:00:41,136 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-07-19 23:03:22,191 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/models/default_core@latest'
+Traceback (most recent call last):
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/var/www/html/PYTHON/RasaTalk/venv/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /models/default_core@latest not found
+2020-07-19 23:04:47,652 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:04:49,838 [INFO ]  Rasa server is up and running.
+2020-07-19 23:05:54,892 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-07-19 23:06:12,601 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:06:16,037 [INFO ]  Rasa server is up and running.
+2020-07-19 23:08:06,157 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:08:08,395 [INFO ]  Rasa server is up and running.
+2020-07-19 23:22:38,189 [INFO ]  Persisted model to '/tmp/tmpfcngub5t/core'
+2020-07-19 23:22:38,194 [INFO ]  Training data stats:
+2020-07-19 23:22:38,194 [INFO ]  Number of intent examples: 11 (2 distinct intents)
+2020-07-19 23:22:38,194 [INFO ]    Found intents: 'greet', 'goodbye'
+2020-07-19 23:22:38,194 [INFO ]  Number of response examples: 0 (0 distinct responses)
+2020-07-19 23:22:38,195 [INFO ]  Number of entity examples: 2 (1 distinct entities)
+2020-07-19 23:22:38,195 [INFO ]    Found entity types: 'name'
+2020-07-19 23:22:38,196 [INFO ]  Starting to train component WhitespaceTokenizer
+2020-07-19 23:22:38,196 [INFO ]  Finished training component.
+2020-07-19 23:22:38,196 [INFO ]  Starting to train component RegexFeaturizer
+2020-07-19 23:22:38,196 [INFO ]  Finished training component.
+2020-07-19 23:22:38,197 [INFO ]  Starting to train component CRFEntityExtractor
+2020-07-19 23:22:38,204 [INFO ]  Finished training component.
+2020-07-19 23:22:38,204 [INFO ]  Starting to train component EntitySynonymMapper
+2020-07-19 23:22:38,205 [INFO ]  Finished training component.
+2020-07-19 23:22:38,205 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:22:38,211 [INFO ]  Finished training component.
+2020-07-19 23:22:38,211 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:22:38,220 [INFO ]  Finished training component.
+2020-07-19 23:22:38,220 [INFO ]  Starting to train component EmbeddingIntentClassifier
+2020-07-19 23:22:50,620 [INFO ]  Finished training.
+2020-07-19 23:22:50,652 [INFO ]  Finished training component.
+2020-07-19 23:22:50,688 [INFO ]  Successfully saved model into '/tmp/tmpfcngub5t/nlu'
+2020-07-19 23:23:15,591 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:23:19,952 [INFO ]  Rasa server is up and running.
+2020-07-19 23:31:52,571 [INFO ]  Persisted model to '/tmp/tmp3giduvgy/core'
+2020-07-19 23:31:52,575 [INFO ]  Training data stats:
+2020-07-19 23:31:52,575 [INFO ]  Number of intent examples: 15 (2 distinct intents)
+2020-07-19 23:31:52,575 [INFO ]    Found intents: 'goodbye', 'greet'
+2020-07-19 23:31:52,575 [INFO ]  Number of response examples: 0 (0 distinct responses)
+2020-07-19 23:31:52,575 [INFO ]  Number of entity examples: 2 (1 distinct entities)
+2020-07-19 23:31:52,575 [INFO ]    Found entity types: 'name'
+2020-07-19 23:31:52,576 [INFO ]  Starting to train component WhitespaceTokenizer
+2020-07-19 23:31:52,576 [INFO ]  Finished training component.
+2020-07-19 23:31:52,576 [INFO ]  Starting to train component RegexFeaturizer
+2020-07-19 23:31:52,577 [INFO ]  Finished training component.
+2020-07-19 23:31:52,577 [INFO ]  Starting to train component CRFEntityExtractor
+2020-07-19 23:31:52,583 [INFO ]  Finished training component.
+2020-07-19 23:31:52,583 [INFO ]  Starting to train component EntitySynonymMapper
+2020-07-19 23:31:52,583 [INFO ]  Finished training component.
+2020-07-19 23:31:52,583 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:31:52,590 [INFO ]  Finished training component.
+2020-07-19 23:31:52,590 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:31:52,604 [INFO ]  Finished training component.
+2020-07-19 23:31:52,604 [INFO ]  Starting to train component EmbeddingIntentClassifier
+2020-07-19 23:32:10,985 [INFO ]  Finished training.
+2020-07-19 23:32:11,027 [INFO ]  Finished training component.
+2020-07-19 23:32:11,091 [INFO ]  Successfully saved model into '/tmp/tmp3giduvgy/nlu'
+2020-07-19 23:32:56,493 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:33:01,514 [INFO ]  Rasa server is up and running.
+2020-07-19 23:33:41,746 [ERROR]  The model predicted the custom action 'action_listen', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2020-07-19 23:33:41,746 [ERROR]  Encountered an exception while running action 'action_listen'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-07-19 23:42:00,557 [INFO ]  Persisted model to '/tmp/tmpe26byidv/core'
+2020-07-19 23:42:00,560 [INFO ]  Training data stats:
+2020-07-19 23:42:00,560 [INFO ]  Number of intent examples: 12 (2 distinct intents)
+2020-07-19 23:42:00,560 [INFO ]    Found intents: 'goodbye', 'greet'
+2020-07-19 23:42:00,560 [INFO ]  Number of response examples: 0 (0 distinct responses)
+2020-07-19 23:42:00,561 [INFO ]  Number of entity examples: 2 (1 distinct entities)
+2020-07-19 23:42:00,561 [INFO ]    Found entity types: 'name'
+2020-07-19 23:42:00,561 [INFO ]  Starting to train component WhitespaceTokenizer
+2020-07-19 23:42:00,561 [INFO ]  Finished training component.
+2020-07-19 23:42:00,561 [INFO ]  Starting to train component RegexFeaturizer
+2020-07-19 23:42:00,561 [INFO ]  Finished training component.
+2020-07-19 23:42:00,561 [INFO ]  Starting to train component CRFEntityExtractor
+2020-07-19 23:42:00,573 [INFO ]  Finished training component.
+2020-07-19 23:42:00,573 [INFO ]  Starting to train component EntitySynonymMapper
+2020-07-19 23:42:00,573 [INFO ]  Finished training component.
+2020-07-19 23:42:00,573 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:42:00,580 [INFO ]  Finished training component.
+2020-07-19 23:42:00,580 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:42:00,589 [INFO ]  Finished training component.
+2020-07-19 23:42:00,589 [INFO ]  Starting to train component EmbeddingIntentClassifier
+2020-07-19 23:42:19,876 [INFO ]  Finished training.
+2020-07-19 23:42:19,915 [INFO ]  Finished training component.
+2020-07-19 23:42:19,972 [INFO ]  Successfully saved model into '/tmp/tmpe26byidv/nlu'
+2020-07-19 23:42:45,473 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:42:50,623 [INFO ]  Rasa server is up and running.
+2020-07-19 23:52:04,895 [INFO ]  Persisted model to '/tmp/tmpsa0_hqga/core'
+2020-07-19 23:52:04,899 [INFO ]  Training data stats:
+2020-07-19 23:52:04,900 [INFO ]  Number of intent examples: 6 (1 distinct intents)
+2020-07-19 23:52:04,900 [INFO ]    Found intents: 'greet'
+2020-07-19 23:52:04,901 [INFO ]  Number of response examples: 0 (0 distinct responses)
+2020-07-19 23:52:04,901 [INFO ]  Number of entity examples: 1 (1 distinct entities)
+2020-07-19 23:52:04,901 [INFO ]    Found entity types: 'name'
+2020-07-19 23:52:04,901 [INFO ]  Starting to train component WhitespaceTokenizer
+2020-07-19 23:52:04,902 [INFO ]  Finished training component.
+2020-07-19 23:52:04,902 [INFO ]  Starting to train component RegexFeaturizer
+2020-07-19 23:52:04,903 [INFO ]  Finished training component.
+2020-07-19 23:52:04,903 [INFO ]  Starting to train component CRFEntityExtractor
+2020-07-19 23:52:04,911 [INFO ]  Finished training component.
+2020-07-19 23:52:04,912 [INFO ]  Starting to train component EntitySynonymMapper
+2020-07-19 23:52:04,912 [INFO ]  Finished training component.
+2020-07-19 23:52:04,912 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:52:04,917 [INFO ]  Finished training component.
+2020-07-19 23:52:04,917 [INFO ]  Starting to train component CountVectorsFeaturizer
+2020-07-19 23:52:04,922 [INFO ]  Finished training component.
+2020-07-19 23:52:04,922 [INFO ]  Starting to train component EmbeddingIntentClassifier
+2020-07-19 23:52:04,924 [ERROR]  Cannot train 'EmbeddingIntentClassifier'. Need at least 2 different intent classes. Skipping training of classifier.
+2020-07-19 23:52:04,925 [INFO ]  Finished training component.
+2020-07-19 23:52:04,942 [INFO ]  Successfully saved model into '/tmp/tmpsa0_hqga/nlu'
+2020-07-19 23:52:41,295 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-19 23:52:43,022 [INFO ]  Rasa server is up and running.
+2020-07-26 00:58:10,128 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 00:58:11,522 [INFO ]  Rasa server is up and running.
+2020-07-26 01:27:42,013 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:27:42,048 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:28:26,791 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 01:28:27,970 [INFO ]  Rasa server is up and running.
+2020-07-26 01:28:39,482 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:28:39,517 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:29:56,742 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:29:56,779 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:29:56,830 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:29:56,851 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:15,170 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:15,212 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:15,242 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:30:15,266 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:37,970 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 01:30:39,116 [INFO ]  Rasa server is up and running.
+2020-07-26 01:30:55,534 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:55,566 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:30:55,614 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:30:55,631 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:32:01,924 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:32:10,694 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:32:31,926 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:33:27,251 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:34:26,638 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:34:26,697 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:34:26,725 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:34:26,752 [WARNI]  Skipping line 15. No valid command found. Line Content: 'utter_default'
+2020-07-26 01:34:43,302 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:34:52,033 [INFO ]  Persisted model to '/tmp/tmpyv097t0j/core'
+2020-07-26 01:34:52,133 [INFO ]  Trying to load spacy model with name 'en'
+2020-07-26 01:35:05,577 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 01:35:05,581 [INFO ]  Training data stats:
+2020-07-26 01:35:05,581 [INFO ]  Number of intent examples: 45 (6 distinct intents)
+2020-07-26 01:35:05,581 [INFO ]    Found intents: 'bye', 'fine_ask', 'news', 'greet', 'thanks', 'fine_normal'
+2020-07-26 01:35:05,581 [INFO ]  Number of response examples: 0 (0 distinct responses)
+2020-07-26 01:35:05,581 [INFO ]  Number of entity examples: 13 (1 distinct entities)
+2020-07-26 01:35:05,581 [INFO ]    Found entity types: 'category'
+2020-07-26 01:35:05,583 [INFO ]  Starting to train component SpacyNLP
+2020-07-26 01:35:05,636 [INFO ]  Finished training component.
+2020-07-26 01:35:05,636 [INFO ]  Starting to train component SpacyTokenizer
+2020-07-26 01:35:05,639 [INFO ]  Finished training component.
+2020-07-26 01:35:05,639 [INFO ]  Starting to train component SpacyFeaturizer
+2020-07-26 01:35:05,644 [INFO ]  Finished training component.
+2020-07-26 01:35:05,644 [INFO ]  Starting to train component RegexFeaturizer
+2020-07-26 01:35:05,644 [INFO ]  Finished training component.
+2020-07-26 01:35:05,645 [INFO ]  Starting to train component CRFEntityExtractor
+2020-07-26 01:35:05,725 [INFO ]  Finished training component.
+2020-07-26 01:35:05,725 [INFO ]  Starting to train component EntitySynonymMapper
+2020-07-26 01:35:05,725 [INFO ]  Finished training component.
+2020-07-26 01:35:05,725 [INFO ]  Starting to train component SklearnIntentClassifier
+2020-07-26 01:35:05,825 [INFO ]  Finished training component.
+2020-07-26 01:35:05,862 [INFO ]  Successfully saved model into '/tmp/tmpyv097t0j/nlu'
+2020-07-26 01:36:28,586 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 01:36:42,636 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 01:36:43,845 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:36:43,846 [INFO ]  Rasa server is up and running.
+2020-07-26 01:41:08,927 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 01:41:08,928 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 01:41:08,928 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 01:41:08,928 [INFO ]  Enabling coroutine debugging. Loop id 77867192.
+2020-07-26 01:41:08,932 [DEBUG]  Extracted model to '/tmp/tmplv2di4wk'.
+2020-07-26 01:41:22,142 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 01:41:22,197 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 01:41:22,198 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 01:41:22,208 [DEBUG]  Extracted model to '/tmp/tmpzc7_yfym'.
+2020-07-26 01:41:22,210 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 01:41:23,444 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 01:41:23,444 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 01:41:23,445 [INFO ]  Rasa server is up and running.
+2020-07-26 01:41:33,365 [DEBUG]  Creating a new tracker for id 'undefined'.
+2020-07-26 01:41:33,365 [DEBUG]  Starting a new session for conversation ID 'undefined'.
+2020-07-26 01:41:33,366 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x7f11dc122b00>, <rasa.core.events.ActionExecuted object at 0x7f11dc122ac8>]'.
+2020-07-26 01:41:33,366 [DEBUG]  Current slot values: 
+	category: None
+2020-07-26 01:41:33,384 [DEBUG]  Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.6898293737351655}' and entities '[]'
+2020-07-26 01:41:33,385 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2020-07-26 01:41:33,385 [DEBUG]  Deleted lock for conversation 'undefined'.
+2020-07-26 01:41:33,389 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:33,950 [DEBUG]  Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+2020-07-26 01:41:33,950 [DEBUG]  There is a memorised next action 'utter_greet'
+2020-07-26 01:41:33,950 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:41:33,950 [DEBUG]  There is no active form
+2020-07-26 01:41:33,950 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 01:41:33,958 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:33,959 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:33,960 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hello, How are you doing?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595709693.9604356)]'.
+2020-07-26 01:41:33,961 [DEBUG]  Deleted lock for conversation 'undefined'.
+2020-07-26 01:41:33,961 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:33,966 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:34,995 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:47,617 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:47,654 [DEBUG]  Received user message 'I'm good' with intent '{'name': 'fine_normal', 'confidence': 0.7334385157180778}' and entities '[]'
+2020-07-26 01:41:47,655 [DEBUG]  Logged UserUtterance - tracker now has 7 events.
+2020-07-26 01:41:47,655 [DEBUG]  Deleted lock for conversation 'undefined'.
+2020-07-26 01:41:47,662 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:41:47,704 [DEBUG]  Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_fine_normal': 1.0}]
+2020-07-26 01:41:47,704 [DEBUG]  There is no memorised next action
+2020-07-26 01:41:47,704 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:41:47,704 [DEBUG]  There is no active form
+2020-07-26 01:41:47,704 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:41:47,721 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:28,239 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:28,240 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:28,242 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey, how are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595709808.2421806)]'.
+2020-07-26 01:43:28,243 [DEBUG]  Deleted lock for conversation 'undefined'.
+2020-07-26 01:43:28,243 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:56,975 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:57,012 [DEBUG]  Received user message 'What is cooking in food' with intent '{'name': 'news', 'confidence': 0.7256999193982452}' and entities '[{'entity': 'category', 'start': 19, 'end': 23, 'confidence_entity': 0.8015127256099334, 'value': 'food', 'extractor': 'CRFEntityExtractor'}]'
+2020-07-26 01:43:57,014 [DEBUG]  Current slot values: 
+	category: food
+2020-07-26 01:43:57,014 [DEBUG]  Logged UserUtterance - tracker now has 11 events.
+2020-07-26 01:43:57,015 [DEBUG]  Deleted lock for conversation 'undefined'.
+2020-07-26 01:43:57,022 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:43:57,054 [DEBUG]  Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_greet': 1.0, 'intent_fine_normal': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'prev_utter_greet': 1.0, 'entity_category': 1.0}]
+2020-07-26 01:43:57,054 [DEBUG]  There is no memorised next action
+2020-07-26 01:43:57,054 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:43:57,054 [DEBUG]  There is no active form
+2020-07-26 01:43:57,054 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:43:57,064 [DEBUG]  Recreating tracker for id 'undefined'
+2020-07-26 01:50:02,457 [DEBUG]  Creating a new tracker for id 'rasaweb'.
+2020-07-26 01:50:02,458 [DEBUG]  Starting a new session for conversation ID 'rasaweb'.
+2020-07-26 01:50:02,459 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x7f11bc5cb2e8>, <rasa.core.events.ActionExecuted object at 0x7f11bc5cb2b0>]'.
+2020-07-26 01:50:02,460 [DEBUG]  Current slot values: 
+	category: None
+2020-07-26 01:50:02,469 [DEBUG]  Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.6898293737351655}' and entities '[]'
+2020-07-26 01:50:02,469 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2020-07-26 01:50:02,514 [DEBUG]  Current tracker state [None, None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+2020-07-26 01:50:02,515 [DEBUG]  There is a memorised next action 'utter_greet'
+2020-07-26 01:50:02,515 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:50:02,515 [DEBUG]  There is no active form
+2020-07-26 01:50:02,515 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 01:50:02,515 [DEBUG]  Predicted next action 'utter_greet' with confidence 1.00.
+2020-07-26 01:50:02,515 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hello, How are you doing?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710202.5158517)]'.
+2020-07-26 01:50:02,553 [DEBUG]  Current tracker state [None, None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+2020-07-26 01:50:02,554 [DEBUG]  There is a memorised next action 'action_listen'
+2020-07-26 01:50:02,554 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:50:02,554 [DEBUG]  There is no active form
+2020-07-26 01:50:02,554 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 01:50:02,555 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:50:02,555 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:50:02,556 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 01:50:28,625 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-26 01:50:28,654 [DEBUG]  Received user message 'I'm good' with intent '{'name': 'fine_normal', 'confidence': 0.7334385157180778}' and entities '[]'
+2020-07-26 01:50:28,655 [DEBUG]  Logged UserUtterance - tracker now has 8 events.
+2020-07-26 01:50:28,713 [DEBUG]  Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_fine_normal': 1.0, 'prev_action_listen': 1.0}]
+2020-07-26 01:50:28,713 [DEBUG]  There is no memorised next action
+2020-07-26 01:50:28,714 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:50:28,714 [DEBUG]  There is no active form
+2020-07-26 01:50:28,714 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:50:28,714 [DEBUG]  Predicted next action 'utter_help' with confidence 0.98.
+2020-07-26 01:50:28,714 [DEBUG]  Action 'utter_help' ended with events '[BotUttered('Great. Tell me How can I help you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710228.714845)]'.
+2020-07-26 01:50:28,768 [DEBUG]  Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_fine_normal': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_help': 1.0, 'intent_fine_normal': 1.0}]
+2020-07-26 01:50:28,768 [DEBUG]  There is no memorised next action
+2020-07-26 01:50:28,768 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:50:28,769 [DEBUG]  There is no active form
+2020-07-26 01:50:28,769 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:50:28,769 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:50:28,769 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:50:28,770 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 01:51:08,910 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-26 01:51:08,938 [DEBUG]  Received user message 'What is going on in business' with intent '{'name': 'news', 'confidence': 0.7359201552447211}' and entities '[{'entity': 'category', 'start': 20, 'end': 28, 'confidence_entity': 0.9254034034030202, 'value': 'business', 'extractor': 'CRFEntityExtractor'}]'
+2020-07-26 01:51:08,938 [DEBUG]  Current slot values: 
+	category: business
+2020-07-26 01:51:08,938 [DEBUG]  Logged UserUtterance - tracker now has 13 events.
+2020-07-26 01:51:08,987 [DEBUG]  Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_fine_normal': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_help': 1.0, 'intent_fine_normal': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_action_listen': 1.0}]
+2020-07-26 01:51:08,987 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:08,987 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:51:08,988 [DEBUG]  There is no active form
+2020-07-26 01:51:08,988 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:51:08,988 [DEBUG]  Predicted next action 'utter_ofc' with confidence 0.97.
+2020-07-26 01:51:08,988 [DEBUG]  Action 'utter_ofc' ended with events '[BotUttered('I can definitely help you. The top 5 news of the business', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710268.988749)]'.
+2020-07-26 01:51:09,039 [DEBUG]  Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_fine_normal': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_help': 1.0, 'intent_fine_normal': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_action_listen': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_utter_ofc': 1.0}]
+2020-07-26 01:51:09,040 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:09,041 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:51:09,041 [DEBUG]  There is no active form
+2020-07-26 01:51:09,041 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:51:09,041 [DEBUG]  Predicted next action 'action_get_news' with confidence 1.00.
+2020-07-26 01:51:09,042 [ERROR]  The model predicted the custom action 'action_get_news', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2020-07-26 01:51:09,042 [ERROR]  Encountered an exception while running action 'action_get_news'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2020-07-26 01:51:09,042 [DEBUG]  Failed to execute custom action.
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/processor.py", line 650, in _run_action
+    events = await action.run(output_channel, nlg, tracker, self.domain)
+  File "/usr/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/actions/action.py", line 542, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+2020-07-26 01:51:09,044 [DEBUG]  Action 'action_get_news' ended with events '[]'.
+2020-07-26 01:51:09,044 [DEBUG]  Current slot values: 
+	category: business
+2020-07-26 01:51:09,104 [DEBUG]  Current tracker state [{'intent_fine_normal': 1.0, 'prev_action_listen': 1.0}, {'prev_utter_help': 1.0, 'intent_fine_normal': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_action_listen': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_utter_ofc': 1.0}, {'intent_news': 1.0, 'prev_action_get_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0}]
+2020-07-26 01:51:09,104 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:09,104 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:51:09,104 [DEBUG]  There is no active form
+2020-07-26 01:51:09,104 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:51:09,104 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:51:09,105 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:51:09,105 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 01:51:20,289 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-26 01:51:20,296 [DEBUG]  Received user message 'Thanks' with intent '{'name': 'bye', 'confidence': 0.23208693649486117}' and entities '[]'
+2020-07-26 01:51:20,297 [DEBUG]  Logged UserUtterance - tracker now has 18 events.
+2020-07-26 01:51:20,348 [DEBUG]  Current tracker state [{'prev_utter_help': 1.0, 'intent_fine_normal': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_action_listen': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_utter_ofc': 1.0}, {'intent_news': 1.0, 'prev_action_get_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:20,348 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:20,348 [DEBUG]  NLU confidence 0.23208693649486117 is lower than NLU threshold 0.30. 
+2020-07-26 01:51:20,348 [DEBUG]  There is no active form
+2020-07-26 01:51:20,348 [DEBUG]  Predicted next action using policy_2_FallbackPolicy
+2020-07-26 01:51:20,353 [DEBUG]  Predicted next action 'utter_default' with confidence 1.00.
+2020-07-26 01:51:20,354 [DEBUG]  Action 'utter_default' ended with events '[BotUttered('I am not sure what you're aiming for', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710280.3548343)]'.
+2020-07-26 01:51:20,424 [DEBUG]  Current tracker state [{'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_action_listen': 1.0}, {'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_utter_ofc': 1.0}, {'intent_news': 1.0, 'prev_action_get_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:20,424 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:20,424 [DEBUG]  Predicted 'action_listen' after fallback action 'utter_default'
+2020-07-26 01:51:20,424 [DEBUG]  There is no active form
+2020-07-26 01:51:20,424 [DEBUG]  Predicted next action using policy_2_FallbackPolicy
+2020-07-26 01:51:20,425 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:51:20,425 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:51:20,426 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 01:51:29,635 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-26 01:51:29,643 [DEBUG]  Received user message 'thanks' with intent '{'name': 'bye', 'confidence': 0.23208693649486117}' and entities '[]'
+2020-07-26 01:51:29,644 [DEBUG]  Logged UserUtterance - tracker now has 22 events.
+2020-07-26 01:51:29,696 [DEBUG]  Current tracker state [{'intent_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0, 'prev_utter_ofc': 1.0}, {'intent_news': 1.0, 'prev_action_get_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:29,697 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:29,698 [DEBUG]  NLU confidence 0.23208693649486117 is lower than NLU threshold 0.30. 
+2020-07-26 01:51:29,698 [DEBUG]  There is no active form
+2020-07-26 01:51:29,698 [DEBUG]  Predicted next action using policy_2_FallbackPolicy
+2020-07-26 01:51:29,698 [DEBUG]  Predicted next action 'utter_default' with confidence 1.00.
+2020-07-26 01:51:29,699 [DEBUG]  Action 'utter_default' ended with events '[BotUttered('I am not sure what you're aiming for', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710289.6991909)]'.
+2020-07-26 01:51:29,765 [DEBUG]  Current tracker state [{'intent_news': 1.0, 'prev_action_get_news': 1.0, 'slot_category_0': 1.0, 'entity_category': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:29,765 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:29,765 [DEBUG]  Predicted 'action_listen' after fallback action 'utter_default'
+2020-07-26 01:51:29,765 [DEBUG]  There is no active form
+2020-07-26 01:51:29,765 [DEBUG]  Predicted next action using policy_2_FallbackPolicy
+2020-07-26 01:51:29,766 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:51:29,766 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:51:29,767 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 01:51:34,627 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-26 01:51:34,637 [DEBUG]  Received user message 'Bye' with intent '{'name': 'bye', 'confidence': 0.6097068708665191}' and entities '[]'
+2020-07-26 01:51:34,638 [DEBUG]  Logged UserUtterance - tracker now has 26 events.
+2020-07-26 01:51:34,701 [DEBUG]  Current tracker state [{'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:34,701 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:34,702 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:51:34,702 [DEBUG]  There is no active form
+2020-07-26 01:51:34,702 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:51:34,702 [DEBUG]  Predicted next action 'utter_bye' with confidence 0.98.
+2020-07-26 01:51:34,703 [DEBUG]  Action 'utter_bye' ended with events '[BotUttered('Bye and have a nice day', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595710294.7031627)]'.
+2020-07-26 01:51:34,748 [DEBUG]  Current tracker state [{'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'prev_utter_default': 1.0, 'slot_category_0': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_action_listen': 1.0, 'intent_bye': 1.0}, {'slot_category_0': 1.0, 'prev_utter_bye': 1.0, 'intent_bye': 1.0}]
+2020-07-26 01:51:34,748 [DEBUG]  There is no memorised next action
+2020-07-26 01:51:34,749 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 01:51:34,749 [DEBUG]  There is no active form
+2020-07-26 01:51:34,749 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-26 01:51:34,750 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 01:51:34,750 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 01:51:34,752 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 14:41:36,116 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 14:41:36,117 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 14:41:36,117 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 14:41:36,117 [INFO ]  Enabling coroutine debugging. Loop id 103287240.
+2020-07-26 14:41:36,123 [DEBUG]  Extracted model to '/tmp/tmpby3fi3ol'.
+2020-07-26 14:41:47,433 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 14:41:47,458 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 14:41:47,458 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 14:41:47,463 [DEBUG]  Extracted model to '/tmp/tmpl7wk4o80'.
+2020-07-26 14:41:47,464 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 14:41:48,403 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 14:41:48,403 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 14:41:48,403 [INFO ]  Rasa server is up and running.
+2020-07-26 21:59:05,445 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 21:59:17,512 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 21:59:18,575 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 21:59:18,576 [INFO ]  Rasa server is up and running.
+2020-07-26 22:01:40,941 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:02:59,494 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:08:58,047 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:09:08,563 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:09:09,542 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:09:09,542 [INFO ]  Rasa server is up and running.
+2020-07-26 22:09:51,046 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:10:46,033 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:11:06,919 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:11:22,585 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:11:24,376 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:11:24,377 [INFO ]  Rasa server is up and running.
+2020-07-26 22:11:27,928 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook%20unreachable'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook unreachable not found
+2020-07-26 22:11:28,210 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-26 22:12:01,533 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:12:11,257 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:12:21,675 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/rest/webhook not found
+2020-07-26 22:13:25,229 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:13:40,510 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:13:42,133 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:13:42,135 [INFO ]  Rasa server is up and running.
+2020-07-26 22:14:03,265 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:14:20,162 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:14:21,999 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:14:22,000 [INFO ]  Rasa server is up and running.
+2020-07-26 22:15:41,750 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:15:41,750 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:15:41,751 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:15:41,751 [INFO ]  Enabling coroutine debugging. Loop id 91763624.
+2020-07-26 22:15:41,755 [DEBUG]  Extracted model to '/tmp/tmp72wsa7vw'.
+2020-07-26 22:15:55,277 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:15:55,321 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:15:55,321 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:15:55,326 [DEBUG]  Extracted model to '/tmp/tmp9aaedfzf'.
+2020-07-26 22:15:55,327 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:15:56,995 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:15:56,996 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:15:56,997 [INFO ]  Rasa server is up and running.
+2020-07-26 22:16:01,896 [DEBUG]  Creating a new tracker for id 'rasaweb'.
+2020-07-26 22:16:01,898 [DEBUG]  Starting a new session for conversation ID 'rasaweb'.
+2020-07-26 22:16:01,898 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x7f59206deb00>, <rasa.core.events.ActionExecuted object at 0x7f59206deac8>]'.
+2020-07-26 22:16:01,899 [DEBUG]  Current slot values: 
+	category: None
+2020-07-26 22:16:01,925 [DEBUG]  Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.6898293737351655}' and entities '[]'
+2020-07-26 22:16:01,925 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2020-07-26 22:16:02,750 [DEBUG]  Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+2020-07-26 22:16:02,751 [DEBUG]  There is a memorised next action 'utter_greet'
+2020-07-26 22:16:02,751 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 22:16:02,751 [DEBUG]  There is no active form
+2020-07-26 22:16:02,751 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 22:16:02,751 [DEBUG]  Predicted next action 'utter_greet' with confidence 1.00.
+2020-07-26 22:16:02,751 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hello, How are you doing?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595783762.7518713)]'.
+2020-07-26 22:16:02,788 [DEBUG]  Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+2020-07-26 22:16:02,788 [DEBUG]  There is a memorised next action 'action_listen'
+2020-07-26 22:16:02,788 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 22:16:02,788 [DEBUG]  There is no active form
+2020-07-26 22:16:02,788 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 22:16:02,789 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 22:16:02,789 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 22:16:02,789 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 22:16:38,209 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:16:38,209 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:16:38,210 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:16:38,210 [INFO ]  Enabling coroutine debugging. Loop id 97405448.
+2020-07-26 22:16:38,214 [DEBUG]  Extracted model to '/tmp/tmprx37wz3f'.
+2020-07-26 22:16:51,358 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:16:51,385 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:16:51,385 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:16:51,389 [DEBUG]  Extracted model to '/tmp/tmpzy6sxzvc'.
+2020-07-26 22:16:51,390 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:16:53,511 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:16:53,513 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:16:53,513 [INFO ]  Rasa server is up and running.
+2020-07-26 22:19:55,464 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/facebook/webhook?hub.mode=subscribe&hub.challenge=260615937&hub.verify_token=Botquipo+Hub'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2020-07-26 22:20:06,012 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/facebook/webhook?hub.mode=subscribe&hub.challenge=1105126446&hub.verify_token=Botquipo+Hub'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2020-07-26 22:20:13,206 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/facebook/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2020-07-26 22:20:14,175 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-26 22:20:37,962 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/facebook/webhook?hub.mode=subscribe&hub.challenge=1502351950&hub.verify_token=Botquipo+Hub'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2020-07-26 22:20:49,357 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/rest/webhook?hub.mode=subscribe&hub.challenge=311881332&hub.verify_token=Botquipo+Hub'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-07-26 22:22:17,229 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:22:17,229 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:22:17,230 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:22:17,230 [INFO ]  Enabling coroutine debugging. Loop id 101400360.
+2020-07-26 22:22:17,234 [DEBUG]  Extracted model to '/tmp/tmp1ko1rjn9'.
+2020-07-26 22:22:28,439 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:22:28,461 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:22:28,461 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:22:28,465 [DEBUG]  Extracted model to '/tmp/tmp94ii9kv7'.
+2020-07-26 22:22:28,466 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:22:29,464 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:22:29,464 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:22:29,464 [INFO ]  Rasa server is up and running.
+2020-07-26 22:22:38,665 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/facebook/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2020-07-26 22:23:32,334 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:23:32,334 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:23:32,335 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:23:32,335 [INFO ]  Enabling coroutine debugging. Loop id 80525336.
+2020-07-26 22:23:32,339 [DEBUG]  Extracted model to '/tmp/tmprwpxc9k_'.
+2020-07-26 22:23:42,858 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:23:42,883 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:23:42,883 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:23:42,887 [DEBUG]  Extracted model to '/tmp/tmpzw9tns22'.
+2020-07-26 22:23:42,888 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:23:43,834 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:23:43,834 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:23:43,835 [INFO ]  Rasa server is up and running.
+2020-07-26 22:23:50,027 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/rest/webhook?hub.mode=subscribe&hub.challenge=1781141361&hub.verify_token=Botquipo+Hub'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-07-26 22:24:06,698 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-07-26 22:24:08,626 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-26 22:24:31,685 [ERROR]  Exception occurred while handling uri: 'http://783661fbb203.ngrok.io/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/usr/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/usr/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-07-26 22:24:52,407 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 976, in handle_request
+    response = await response
+  File "/usr/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 462, in receive
+    sender_id = await self._extract_sender(request)
+  File "/usr/lib/python3.6/asyncio/coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "/home/syedms/.local/lib/python3.6/site-packages/rasa/core/channels/channel.py", line 412, in _extract_sender
+    return req.json.get("sender", None)
+AttributeError: 'NoneType' object has no attribute 'get'
+2020-07-26 22:24:58,625 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-07-26 22:25:17,065 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 452, in _get
+    raise method_not_supported
+sanic.exceptions.MethodNotSupported: Method GET not allowed for URL /webhooks/rest/webhook
+2020-07-26 22:25:26,799 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-26 22:25:45,547 [WARNI]  Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+2020-07-26 22:27:44,845 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:27:44,845 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:27:44,845 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:27:44,846 [INFO ]  Enabling coroutine debugging. Loop id 80517448.
+2020-07-26 22:27:44,850 [DEBUG]  Extracted model to '/tmp/tmpq51u8xnb'.
+2020-07-26 22:27:55,776 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:27:55,802 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:27:55,803 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:27:55,806 [DEBUG]  Extracted model to '/tmp/tmp3y0f4f88'.
+2020-07-26 22:27:55,807 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:27:56,745 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:27:56,745 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:27:56,746 [INFO ]  Rasa server is up and running.
+2020-07-26 22:28:19,784 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-26 22:29:49,913 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:29:49,914 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:29:49,914 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:29:49,914 [INFO ]  Enabling coroutine debugging. Loop id 91895688.
+2020-07-26 22:29:49,918 [DEBUG]  Extracted model to '/tmp/tmpoijyqdmn'.
+2020-07-26 22:30:02,603 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:30:02,635 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:30:02,636 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:30:02,641 [DEBUG]  Extracted model to '/tmp/tmpbn0tesa1'.
+2020-07-26 22:30:02,642 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:30:03,757 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:30:03,758 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:30:03,758 [INFO ]  Rasa server is up and running.
+2020-07-26 22:30:13,535 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/robots.txt'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /robots.txt not found
+2020-07-26 22:30:21,617 [ERROR]  Exception occurred while handling uri: 'http://d5a34cecd7d9.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-26 22:30:42,885 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-26 22:32:32,929 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:32:32,929 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:32:32,930 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:32:32,931 [INFO ]  Enabling coroutine debugging. Loop id 90601288.
+2020-07-26 22:32:32,939 [DEBUG]  Extracted model to '/tmp/tmplz3kx96z'.
+2020-07-26 22:32:44,030 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:32:44,054 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:32:44,054 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:32:44,058 [DEBUG]  Extracted model to '/tmp/tmp3fyac17c'.
+2020-07-26 22:32:44,059 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:32:45,145 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:32:45,145 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:32:45,145 [INFO ]  Rasa server is up and running.
+2020-07-26 22:33:33,200 [DEBUG]  Creating a new tracker for id 'rasaweb'.
+2020-07-26 22:33:33,201 [DEBUG]  Starting a new session for conversation ID 'rasaweb'.
+2020-07-26 22:33:33,201 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x7f54f1006c88>, <rasa.core.events.ActionExecuted object at 0x7f54f1006c50>]'.
+2020-07-26 22:33:33,201 [DEBUG]  Current slot values: 
+	category: None
+2020-07-26 22:33:33,215 [DEBUG]  Received user message 'how are you?' with intent '{'name': 'fine_ask', 'confidence': 0.6530739963832197}' and entities '[]'
+2020-07-26 22:33:33,216 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2020-07-26 22:33:34,105 [DEBUG]  Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_fine_ask': 1.0}]
+2020-07-26 22:33:34,106 [DEBUG]  There is a memorised next action 'utter_reply'
+2020-07-26 22:33:34,106 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 22:33:34,106 [DEBUG]  There is no active form
+2020-07-26 22:33:34,106 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 22:33:34,107 [DEBUG]  Predicted next action 'utter_reply' with confidence 1.00.
+2020-07-26 22:33:34,108 [DEBUG]  Action 'utter_reply' ended with events '[BotUttered('I'm doing great. Please let me know what I can do for you.', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1595784814.1080103)]'.
+2020-07-26 22:33:34,140 [DEBUG]  Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_fine_ask': 1.0}, {'prev_utter_reply': 1.0, 'intent_fine_ask': 1.0}]
+2020-07-26 22:33:34,141 [DEBUG]  There is a memorised next action 'action_listen'
+2020-07-26 22:33:34,141 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-26 22:33:34,141 [DEBUG]  There is no active form
+2020-07-26 22:33:34,141 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-26 22:33:34,141 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-26 22:33:34,142 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-26 22:33:34,142 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-26 22:43:14,655 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-26 22:43:14,655 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-26 22:43:14,655 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-26 22:43:14,656 [INFO ]  Enabling coroutine debugging. Loop id 100338936.
+2020-07-26 22:43:14,660 [DEBUG]  Extracted model to '/tmp/tmpp0ixx_a9'.
+2020-07-26 22:43:25,502 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-26 22:43:25,524 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-26 22:43:25,525 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-26 22:43:25,528 [DEBUG]  Extracted model to '/tmp/tmpqgyhyg83'.
+2020-07-26 22:43:25,529 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-26 22:43:26,453 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-26 22:43:26,454 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-26 22:43:26,454 [INFO ]  Rasa server is up and running.
+2020-07-26 22:43:31,640 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-26 22:47:03,318 [WARNI]  Invalid fb verify token! Make sure this matches your webhook settings on the facebook app.
+2020-07-26 22:47:03,952 [ERROR]  Exception occurred while handling uri: 'http://8b42a1236b34.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-29 13:18:19,673 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-29 13:18:19,673 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-29 13:18:19,674 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-29 13:18:19,677 [INFO ]  Enabling coroutine debugging. Loop id 80932376.
+2020-07-29 13:18:19,681 [DEBUG]  Extracted model to '/tmp/tmpxchu998g'.
+2020-07-29 13:18:30,575 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-29 13:18:30,643 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-29 13:18:30,643 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-29 13:18:30,647 [DEBUG]  Extracted model to '/tmp/tmpzg4v_ee1'.
+2020-07-29 13:18:30,650 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-29 13:18:31,661 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-29 13:18:31,661 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-29 13:18:31,661 [INFO ]  Rasa server is up and running.
+2020-07-29 13:40:24,096 [DEBUG]  Creating a new tracker for id 'rasaweb'.
+2020-07-29 13:40:24,096 [DEBUG]  Starting a new session for conversation ID 'rasaweb'.
+2020-07-29 13:40:24,097 [DEBUG]  Action 'action_session_start' ended with events '[<rasa.core.events.SessionStarted object at 0x7fe11c6e0d30>, <rasa.core.events.ActionExecuted object at 0x7fe11c6e0cf8>]'.
+2020-07-29 13:40:24,097 [DEBUG]  Current slot values: 
+	category: None
+2020-07-29 13:40:24,119 [DEBUG]  Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.6898293737351655}' and entities '[]'
+2020-07-29 13:40:24,120 [DEBUG]  Logged UserUtterance - tracker now has 4 events.
+2020-07-29 13:40:25,000 [DEBUG]  Current tracker state [None, None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+2020-07-29 13:40:25,000 [DEBUG]  There is a memorised next action 'utter_greet'
+2020-07-29 13:40:25,000 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-29 13:40:25,000 [DEBUG]  There is no active form
+2020-07-29 13:40:25,001 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-29 13:40:25,001 [DEBUG]  Predicted next action 'utter_greet' with confidence 1.00.
+2020-07-29 13:40:25,001 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hey, how are you?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1596012025.0015233)]'.
+2020-07-29 13:40:25,038 [DEBUG]  Current tracker state [None, None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+2020-07-29 13:40:25,039 [DEBUG]  There is a memorised next action 'action_listen'
+2020-07-29 13:40:25,039 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-29 13:40:25,039 [DEBUG]  There is no active form
+2020-07-29 13:40:25,040 [DEBUG]  Predicted next action using policy_1_MemoizationPolicy
+2020-07-29 13:40:25,040 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-29 13:40:25,040 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-29 13:40:25,041 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-29 13:41:06,905 [DEBUG]  Recreating tracker for id 'rasaweb'
+2020-07-29 13:41:06,917 [DEBUG]  Received user message 'hello' with intent '{'name': 'greet', 'confidence': 0.6898293737351655}' and entities '[]'
+2020-07-29 13:41:06,918 [DEBUG]  Logged UserUtterance - tracker now has 8 events.
+2020-07-29 13:41:06,962 [DEBUG]  Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+2020-07-29 13:41:06,962 [DEBUG]  There is no memorised next action
+2020-07-29 13:41:06,962 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-29 13:41:06,962 [DEBUG]  There is no active form
+2020-07-29 13:41:06,962 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-29 13:41:06,962 [DEBUG]  Predicted next action 'utter_greet' with confidence 0.98.
+2020-07-29 13:41:06,963 [DEBUG]  Action 'utter_greet' ended with events '[BotUttered('Hello, How are you doing?', {"elements": null, "quick_replies": null, "buttons": null, "attachment": null, "image": null, "custom": null}, {}, 1596012066.9630692)]'.
+2020-07-29 13:41:07,025 [DEBUG]  Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+2020-07-29 13:41:07,026 [DEBUG]  There is no memorised next action
+2020-07-29 13:41:07,026 [DEBUG]  NLU confidence threshold met, confidence of fallback action set to core threshold (0.3).
+2020-07-29 13:41:07,026 [DEBUG]  There is no active form
+2020-07-29 13:41:07,026 [DEBUG]  Predicted next action using policy_0_KerasPolicy
+2020-07-29 13:41:07,026 [DEBUG]  Predicted next action 'action_listen' with confidence 1.00.
+2020-07-29 13:41:07,027 [DEBUG]  Action 'action_listen' ended with events '[]'.
+2020-07-29 13:41:07,027 [DEBUG]  Deleted lock for conversation 'rasaweb'.
+2020-07-29 13:43:11,825 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:41,401 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:43,408 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:43,857 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:44,048 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:44,232 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:44,407 [WARNI]  Wrong fb secret! Make sure this matches the secret in your facebook app settings
+2020-07-29 13:43:53,512 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-29 13:44:52,947 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2020-07-29 13:46:32,207 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/webhooks/facebook                                 GET                            fb_webhook.health
+/webhooks/facebook/webhook                         GET                            fb_webhook.token_verification
+/webhooks/facebook/webhook                         POST                           fb_webhook.webhook
+/domain                                            GET                            get_domain
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-07-29 13:46:32,208 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-07-29 13:46:32,208 [DEBUG]  Using the default number of Sanic workers (1).
+2020-07-29 13:46:32,209 [INFO ]  Enabling coroutine debugging. Loop id 78201160.
+2020-07-29 13:46:32,213 [DEBUG]  Extracted model to '/tmp/tmpil89ton5'.
+2020-07-29 13:46:43,419 [INFO ]  Added 'SpacyNLP' to component cache. Key 'SpacyNLP-en'.
+2020-07-29 13:46:43,466 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-07-29 13:46:43,466 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-07-29 13:46:43,472 [DEBUG]  Extracted model to '/tmp/tmphh2uhqao'.
+2020-07-29 13:46:43,473 [DEBUG]  Using yaml library: /home/syedms/.local/lib/python3.6/site-packages/ruamel/yaml/__init__.py
+2020-07-29 13:46:44,986 [INFO ]  MappingPolicy not included in policy ensemble. Default intents 'restart and back will not trigger actions 'action_restart' and 'action_back'.
+2020-07-29 13:46:44,986 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-07-29 13:46:44,986 [INFO ]  Rasa server is up and running.
+2020-07-29 13:46:45,087 [ERROR]  Exception occurred while handling uri: 'http://c9364a8f44af.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "/home/syedms/.local/lib/python3.6/site-packages/sanic/router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-07-29 13:47:48,447 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None

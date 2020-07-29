@@ -1,7 +1,7 @@
 {
-  "name": "RasaUI",
+  "name": "Botquipo",
   "version": "3.0.1",
-  "description": "Rasa UI is a web application built on top of, and for, Rasa.",
+  "description": "Botquipo is a web application built on top of, and for, Rasa.",
   "dependencies": {
     "angular": "1.7.2",
     "angular-chart.js": "^1.1.1",
@@ -43,14 +43,7 @@
     "start": "node server/server.js",
     "dev": "nodemon server/server.js --ignore 'server/data/'"
   },
-  "author": "Paul Aschmann",
-  "url": "https://github.com/paschmann/rasa-ui",
-  "copyright": "Copyright 2017",
-  "license": "SEE LICENSE IN https://github.com/paschmann/rasa-ui/blob/master/license",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/paschmann/rasa-ui.git"
-  },
+  "copyright": "Copyright 2020",
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
