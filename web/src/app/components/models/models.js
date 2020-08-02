@@ -55,7 +55,7 @@ function ModelController($scope, $rootScope, appConfig, Model, Bot, Rasa_Status,
     let botToTrain = $scope.objectFindByKey($scope.botList, 'bot_id', $scope.bot.bot_id);
     $scope.message = {text: "Loading model: " + server_model, type: "info"};
     /* TODO: Replace with factory methods */
-    $http.put(appConfig.api_endpoint_v2 + "/rasa/model", { "model_file": server_model }).then(
+    $http.put(appConfig.api_endpoint_v2 + "/rasa/model", { "model_file": server_model.replace('null','models') }).then(
       function (response) {
         if (response.data.code && response.data.code == 400) {
           $scope.message = {text: "Error loading model: " +  JSON.stringify(response), type: "danger"};

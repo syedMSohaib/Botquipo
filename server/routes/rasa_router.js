@@ -149,6 +149,7 @@ function trainRasaNlu(req, res, next) {
 function loadRasaModel(req, res, next) {
   logger.winston.info("Load Rasa Model Request -> " + global.rasa_endpoint + "/model");
   request({ method: "PUT", uri: global.rasa_endpoint + "/model", body: JSON.stringify(req.body) }, function (error, response, body) {
+  // request({ method: "PUT", uri: global.rasa_endpoint + "/model", body: JSON.stringify({"model_file":"models/20200726-013506.tar.gz"}) }, function (error, response, body) {
     if (error) {
       logger.winston.error(error);
       sendOutput(500, res, '{"error" : ' + error + '}');
